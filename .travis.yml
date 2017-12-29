@@ -1,11 +1,3 @@
-# I don't think it a good idea to put api key in public repo
-# nor do I think it necessary since there is auto deploy after CI
-# in heroku
-#
-# deploy:
-#  provider: heroku
-#  api_key:
-#    secure: "YOUR ENCRYPTED API KEY"
-Language: scala
+language: scala
 scala:
    - 2.10.6
