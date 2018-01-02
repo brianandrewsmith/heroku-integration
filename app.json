@@ -1,0 +1,26 @@
+{
+  "name": "heroku-integration",
+  "description": "Review integration",
+  "scripts": {
+  },
+  "env": {
+    "APPLICATION_SECRET": {
+      "generator": "secret"
+    },
+    "PAPERTRAIL_API_TOKEN": "aMTSbVOtVudBdZyQ4eQD"
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "papertrail",
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/scala"
+    }
+  ]
+}
